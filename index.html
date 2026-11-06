@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toprak Özdemir</title>
+  <meta name="description" content="Toprak Özdemir — Economics & Mathematics double major at Boğaziçi University. Interests: microeconomic theory, game theory, industrial organization, econometric methodology, applied microeconomics, mechanism design.">
+  <script>
+    // Apply saved theme before the page renders (avoids a flash of the wrong theme)
+    (function () {
+      var saved = localStorage.getItem('theme');
+      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="brand">Toprak Özdemir</a>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#cv">CV</a>
+      <button id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="about" class="about">
+      <div class="about-text">
+        <h1>Toprak Özdemir</h1>
+        <p class="subtitle">Economics &amp; Mathematics, Boğaziçi University</p>
+        <p>
+          I am a senior undergraduate student in Economics and Mathematics at
+          Boğaziçi University in Istanbul, graduating in 2027. Currently, I am
+          investigating the optimal design of piecewise income tax systems and
+          the structural determination of tax brackets under the supervision of
+          Prof. Ünal Zenginobuz. I plan to pursue a Ph.D. in Economics.
+        </p>
+        <p>
+          <span class="label">Interests:</span> Microeconomic Theory, Game Theory,
+          Industrial Organization, Econometric Methodology, Applied Microeconomics,
+          Mechanism Design.
+        </p>
+        <p class="contact">
+          <a href="mailto:toprakozdemirq@gmail.com">Email</a>
+          <span class="sep">·</span>
+          <a href="https://www.linkedin.com/in/toprak-ozdemir/" target="_blank" rel="noopener">LinkedIn</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/toprak-ozdemir" target="_blank" rel="noopener">GitHub</a>
+          <span class="sep">·</span>
+          <a href="assets/ToprakOzdemirs_CV.pdf" target="_blank" rel="noopener">CV</a>
+        </p>
+      </div>
+      <img src="assets/profile.jpg" alt="Toprak Özdemir" class="photo">
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <article class="project">
+        <h3>Replication of Fomby, Ikeda &amp; Loayza (2013), &ldquo;The Growth Aftermath of Natural Disasters&rdquo;</h3>
+        <p class="meta">Econometrics II (graduate), Spring 2026</p>
+        <p>
+          Python replication of a <em>Journal of Applied Econometrics</em> paper that uses a
+          fixed-effects panel VARX model to estimate how GDP growth responds to droughts, floods,
+          earthquakes and storms. I replicated the implementation of Bootstrap Bias Correction for the Nickell bias in
+          dynamic panels to obtain bias-corrected impulse responses. I translated the original
+          MATLAB code to Python and sped up the nested bootstrap with Numba.
+        </p>
+        <p class="links">
+          <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication" target="_blank" rel="noopener">Code</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication/blob/main/report/replication_report.pdf" target="_blank" rel="noopener">Report</a>
+          <span class="sep">·</span>
+          <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication/blob/main/slides/replication_slides.pdf" target="_blank" rel="noopener">Slides</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Wage Inequality in Turkey</h3>
+        <p class="meta">Economics of Distribution, Spring 2025 &mdash; with Mert Oruntak and Ömer Faruk Yıldız</p>
+        <p>
+          Following the <em>Review of Economic Dynamics</em> guidelines, we used Turkish micro-level
+          data (SILC and Household Budget Survey) to estimate inequality indices and to analyze
+          wage premiums and informality.
+        </p>
+        <p class="links">
+          <a href="assets/papers/wage-inequality-turkey.pdf" target="_blank" rel="noopener">Paper</a>
+          <span class="sep">·</span>
+          <a href="assets/papers/wage-inequality-turkey-slides.pdf" target="_blank" rel="noopener">Slides</a>
+        </p>
+      </article>
+
+      <article class="project">
+        <h3>Latent Space Manipulation and Conditional Latent Diffusion with StyleGAN2</h3>
+        <p class="meta">Probabilistic Approach to Machine Learning, Fall 2025 &mdash; with Hüseyin Çiyik</p>
+        <p>
+          Semantic facial attribute editing in the latent space of a pre-trained StyleGAN2-ADA
+          generator. We compare linear edits in the Z and W spaces (Mean Difference vs. Linear SVM
+          directions) with a conditional latent diffusion model that uses SDE-Edit and
+          classifier-free guidance.
+        </p>
+        <p class="links">
+          <a href="https://github.com/toprak-ozdemir/stylegan2-latent-manipulation-and-diffusion" target="_blank" rel="noopener">Code</a>
+        </p>
+      </article>
+    </section>
+
+    <section id="cv">
+      <h2>CV</h2>
+      <div class="cv-groups">
+        <div class="cv-group">
+          <h3>Education</h3>
+          <table class="cv">
+            <tr>
+              <td class="year">2021&ndash;2027</td>
+              <td>B.A. Economics and B.S. Mathematics (double major), Boğaziçi University. Expected May 2027.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="cv-group">
+          <h3>Experience</h3>
+          <table class="cv">
+            <tr>
+              <td class="year">2024&ndash;2026</td>
+              <td>Undergraduate Teaching Assistant, Boğaziçi University: Advanced Microeconomics, Mathematical Statistics II, Intermediate Macroeconomics.</td>
+            </tr>
+            <tr>
+              <td class="year">2024</td>
+              <td>Intern, Debt Office, Ministry of Treasury and Finance.</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="cv-group">
+          <h3>Awards</h3>
+          <table class="cv">
+            <tr>
+              <td class="year">2021</td>
+              <td>Silver Medal, 25th National Antalya Mathematics Olympiad.</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <p class="cv-download"><a href="assets/ToprakOzdemirs_CV.pdf" target="_blank" rel="noopener">Full CV (PDF)</a></p>
+    </section>
+  </main>
+
+  <footer class="container site-footer">
+    <p>Last updated November 2026</p>
+  </footer>
+
+  <script>
+    document.getElementById('theme-toggle').addEventListener('click', function () {
+      var root = document.documentElement;
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      localStorage.setItem('theme', next);
+    });
+  </script>
+</body>
+</html>
