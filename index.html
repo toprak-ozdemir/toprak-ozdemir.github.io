@@ -4,7 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Toprak Özdemir</title>
-  <meta name="description" content="Toprak Özdemir — Economics & Mathematics double major at Boğaziçi University. Interests: microeconomic theory, game theory, industrial organization, econometric methodology, applied microeconomics, mechanism design.">
+  <meta name="description" content="Toprak Özdemir — Economics &amp; Mathematics double major at Boğaziçi University. Interests: Economic Theory, Game Theory, Industrial Organization, Econometric Methodology, Applied Microeconomics, Mechanism Design, Behavioral Economics.">
+  <meta property="og:title" content="Toprak Özdemir">
+  <meta property="og:description" content="Economics &amp; Mathematics double major at Boğaziçi University. Interests: Economic Theory, Game Theory, Industrial Organization, Econometric Methodology, Applied Microeconomics, Mechanism Design, Behavioral Economics.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://toprak-ozdemir.github.io/">
+  <meta property="og:image" content="https://toprak-ozdemir.github.io/assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
   <script>
     // Apply saved theme before the page renders (avoids a flash of the wrong theme)
     (function () {
@@ -15,22 +21,24 @@
   </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="site-header">
-    <a href="#" class="brand">Toprak Özdemir</a>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#cv">CV</a>
-      <button id="theme-toggle" type="button" aria-label="Toggle dark mode" title="Toggle light / dark theme">
-        <svg class="icon-eclipse" viewBox="0 0 24 24" aria-hidden="true">
-          <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/>
-        </svg>
-      </button>
-    </nav>
+    <div class="header-inner">
+      <a href="#" class="brand">Toprak Özdemir</a>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#cv">CV</a>
+        <button id="theme-toggle" type="button" aria-label="Toggle dark mode" aria-pressed="false" title="Toggle light / dark theme">
+          <svg class="icon-eclipse" viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.8"/>
+            <path d="M12 3.5a8.5 8.5 0 0 1 0 17z" fill="currentColor"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
   </header>
 
   <div class="page-shell">
@@ -46,7 +54,7 @@
       </div>
 
       <p class="interests">
-        <span class="label">Interests:</span> Economic Theory, Game Theory,
+        <span class="label">Interests</span> Economic Theory, Game Theory,
         Industrial Organization, Econometric Methodology, Applied Microeconomics,
         Mechanism Design, Behavioral Economics.
       </p>
@@ -66,7 +74,7 @@
       <main>
         <section id="about" class="bio-section">
           <p class="bio">
-            Welcome to my website! My name is Toprak Özdemir. I am a senior undergraduate student in Economics and Mathematics at
+            I am a senior undergraduate student in Economics and Mathematics at
             Boğaziçi University in Istanbul, graduating in 2027. Currently, I am
             investigating the optimal design of piecewise income tax systems and
             the structural determination of tax brackets under the supervision of
@@ -78,8 +86,8 @@
           <h2>Projects</h2>
 
           <article class="project">
-            <p class="meta">Econometrics II (graduate), Spring 2026</p>
             <h3>Replication of Fomby, Ikeda &amp; Loayza (2013), &ldquo;The Growth Aftermath of Natural Disasters&rdquo;</h3>
+            <p class="meta">Econometrics II (graduate), Spring 2026</p>
             <p>
               Python replication of a <em>Journal of Applied Econometrics</em> paper that uses a
               fixed-effects panel VARX model to estimate how GDP growth responds to droughts, floods,
@@ -90,15 +98,15 @@
             <p class="links">
               <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication" target="_blank" rel="noopener">Code</a>
               <span class="sep">·</span>
-              <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication/blob/main/report/replication_report.pdf" target="_blank" rel="noopener">Report</a>
+              <a href="assets/papers/fomby-2013-replication-report.pdf" target="_blank" rel="noopener">Report</a>
               <span class="sep">·</span>
-              <a href="https://github.com/toprak-ozdemir/fomby-2013-disasters-replication/blob/main/slides/replication_slides.pdf" target="_blank" rel="noopener">Slides</a>
+              <a href="assets/papers/fomby-2013-replication-slides.pdf" target="_blank" rel="noopener">Slides</a>
             </p>
           </article>
 
           <article class="project">
-            <p class="meta">Economics of Distribution, Spring 2025 &mdash; with Mert Oruntak and Ömer Faruk Yıldız</p>
             <h3>Wage Inequality in Turkey</h3>
+            <p class="meta">Economics of Distribution, Spring 2025 &mdash; with Mert Oruntak and Ömer Faruk Yıldız</p>
             <p>
               Following the <em>Review of Economic Dynamics</em> guidelines, we used Turkish micro-level
               data (SILC and Household Budget Survey) to estimate inequality indices and to analyze
@@ -112,8 +120,8 @@
           </article>
 
           <article class="project">
-            <p class="meta">Probabilistic Approach to Machine Learning, Fall 2025 &mdash; with Hüseyin Çiyik</p>
             <h3>Latent Space Manipulation and Conditional Latent Diffusion with StyleGAN2</h3>
+            <p class="meta">Probabilistic Approach to Machine Learning, Fall 2025 &mdash; with Hüseyin Çiyik</p>
             <p>
               Semantic facial attribute editing in the latent space of a pre-trained StyleGAN2-ADA
               generator. We compare linear edits in the Z and W spaces (Mean Difference vs. Linear SVM
@@ -168,18 +176,37 @@
       </main>
 
       <footer class="site-footer">
-        <p>Last updated November 2026</p>
+        <p id="last-updated">Last updated November 2026</p>
       </footer>
     </div>
   </div>
 
   <script>
-    document.getElementById('theme-toggle').addEventListener('click', function () {
+    (function () {
+      var toggle = document.getElementById('theme-toggle');
       var root = document.documentElement;
-      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-      root.setAttribute('data-theme', next);
-      localStorage.setItem('theme', next);
-    });
+      function syncPressed() {
+        toggle.setAttribute('aria-pressed', String(root.getAttribute('data-theme') === 'dark'));
+      }
+      syncPressed();
+      toggle.addEventListener('click', function () {
+        var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+        root.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+        syncPressed();
+      });
+
+      var updated = document.getElementById('last-updated');
+      if (updated && document.lastModified) {
+        var parsed = new Date(document.lastModified);
+        if (!isNaN(parsed.getTime())) {
+          updated.textContent = 'Last updated ' + parsed.toLocaleDateString('en-US', {
+            month: 'long',
+            year: 'numeric'
+          });
+        }
+      }
+    })();
   </script>
 </body>
 </html>
